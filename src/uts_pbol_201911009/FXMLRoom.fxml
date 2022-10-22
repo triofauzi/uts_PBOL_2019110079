@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="348.0" style="-fx-background-color: #2D3347;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uts_pbol_201911009.FXMLRoomController">
+   <children>
+      <Label layoutX="184.0" layoutY="140.0" />
+      <TextField fx:id="txtnumber" layoutX="111.0" layoutY="124.0" prefHeight="25.0" prefWidth="180.0" promptText="Room Number" />
+      <TextField fx:id="txttype" layoutX="110.0" layoutY="218.0" prefHeight="25.0" prefWidth="180.0" promptText="Room Type" />
+      <TextField fx:id="txtprice" layoutX="110.0" layoutY="264.0" prefHeight="25.0" prefWidth="180.0" promptText="Price" />
+      <Label layoutX="81.0" layoutY="43.0" text="Add" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="43.0" text="New Room" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="25.0" layoutX="67.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/SUPER/Dropbox/PC/Documents/NetBeansProjects/UTS_PBOL_2019110079/src/img/icons8-numbers-input-form-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="25.0" layoutX="67.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-bed-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="25.0" layoutX="67.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-expensive-price-24.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnsimpan" layoutX="104.0" layoutY="317.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #2196f3;" text="Simpan" />
+      <Button fx:id="btnquit" layoutX="177.0" layoutY="317.0" mnemonicParsing="false" onAction="#klikquit" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: #2196f3;" text="Quit" />
+      <Button fx:id="btnbtl" layoutX="243.0" layoutY="317.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: #2196f3;" text="Batal" />
+      <TextField fx:id="txtstatus" layoutX="110.0" layoutY="169.0" prefHeight="25.0" prefWidth="180.0" promptText="Status Kamar" />
+      <ImageView fitHeight="51.0" fitWidth="25.0" layoutX="67.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/SUPER/Dropbox/PC/Documents/NetBeansProjects/UTS_PBOL_2019110079/src/img/icons8-user-24.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

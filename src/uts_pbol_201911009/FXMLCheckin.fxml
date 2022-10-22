@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="405.0" style="-fx-background-color: #7daddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uts_pbol_201911009.FXMLCheckinController">
+   <children>
+      <Label layoutX="148.0" layoutY="25.0" text="Room  Check IN">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="58.0" fitWidth="48.0" layoutX="87.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-room-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="82.0" text="Room Type">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboboxtype" layoutX="36.0" layoutY="110.0" prefHeight="25.0" prefWidth="150.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Dulax" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ComboBox>
+      <ComboBox fx:id="comboboxnumber" layoutX="230.0" layoutY="110.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="147.0" layoutY="170.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="88.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-customer-30.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtname" layoutX="36.0" layoutY="246.0" prefHeight="25.0" prefWidth="150.0" promptText="Full Name" />
+      <TextField fx:id="txtnumber" layoutX="230.0" layoutY="246.0" prefHeight="25.0" prefWidth="150.0" promptText="ID Number" />
+      <TextField fx:id="txtphone" layoutX="36.0" layoutY="317.0" prefHeight="25.0" prefWidth="150.0" promptText="Contact Number" />
+      <TextField fx:id="txtemail" layoutX="230.0" layoutY="317.0" prefHeight="25.0" prefWidth="150.0" promptText="Email Address" />
+      <Button fx:id="btnsubmit" layoutX="108.0" layoutY="366.0" mnemonicParsing="false" onAction="#kliksubmit" style="-fx-background-color: #000000;" text="Submit" textFill="WHITE" />
+      <Button fx:id="btnquit" layoutX="254.0" layoutY="366.0" mnemonicParsing="false" onAction="#klikquit" prefHeight="25.0" prefWidth="54.0" style="-fx-background-color: #000000;" text="Quit" textFill="WHITE" />
+      <Label layoutX="232.0" layoutY="82.0" text="Room Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnbatal" layoutX="179.0" layoutY="366.0" mnemonicParsing="false" onAction="#klikbatal" prefHeight="25.0" prefWidth="54.0" style="-fx-background-color: #000000;" text="cancel" textFill="WHITE" />
+      <Label layoutX="36.0" layoutY="219.0" text="Full Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="219.0" text="ID Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="290.0" text="Contact">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="290.0" text="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

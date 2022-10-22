@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="600.0" style="-fx-background-color: #7daddd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uts_pbol_201911009.FXMLRoomViewController">
+   <children>
+      <Label layoutX="90.0" layoutY="15.0" text="Manage Rooms" textFill="#0d2c2f">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="150.0" layoutX="27.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-room-64.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchroom" layoutX="81.0" layoutY="83.0" onKeyReleased="#cariDataroom" prefHeight="25.0" prefWidth="176.0" promptText="Type Room Number" />
+      <ImageView fitHeight="25.0" fitWidth="150.0" layoutX="42.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-search-32.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnaddroom" layoutX="492.0" layoutY="83.0" mnemonicParsing="false" onAction="#klikaddroom" style="-fx-background-color: #000000;" text="Add Room" textFill="WHITE" />
+      <TableView fx:id="tbvroom" layoutX="38.0" layoutY="138.0" prefHeight="226.0" prefWidth="538.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnupdate" layoutX="266.0" layoutY="391.0" mnemonicParsing="false" onAction="#updateklik" style="-fx-background-color: #000000;" text="Update" textFill="WHITE" />
+      <Button fx:id="btnhapus" layoutX="478.0" layoutY="391.0" mnemonicParsing="false" onAction="#hapusklik" style="-fx-background-color: #000000;" text="Delete" textFill="WHITE" />
+      <Button fx:id="btnquit" layoutX="421.0" layoutY="391.0" mnemonicParsing="false" onAction="#quitklik" style="-fx-background-color: #000000;" text="Quit" textFill="WHITE" />
+      <Button fx:id="btnawal" layoutX="40.0" layoutY="391.0" mnemonicParsing="false" onAction="#awalklik" style="-fx-background-color: #000000;" text="Awal" textFill="WHITE" />
+      <Button fx:id="btnakhir" layoutX="123.0" layoutY="392.0" mnemonicParsing="false" onAction="#akhirklik" style="-fx-background-color: #000000;" text="Akhir" textFill="WHITE" />
+   </children>
+</AnchorPane>
